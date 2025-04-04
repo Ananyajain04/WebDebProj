@@ -21,9 +21,9 @@ function SignIn() {
     };
 
     const AnanyaSubmitted = (e) => {
+        event.preventDefault();
         setFormErrors(validate(formValues));
         setIsSubmit(true);
-        alert("Ananya has Submitted");
     };
 
     const navigate = useNavigate();
@@ -64,7 +64,7 @@ function SignIn() {
         <>
             <div className="container">
                 {Object.keys(formErrors).length === 0 && isSubmit ? (
-                    <div className="ui message success">
+                    <div className="message success">
                         Signed in successfully
                     </div>
                 ) : (
@@ -73,9 +73,8 @@ function SignIn() {
 
                 <form onSubmit={AnanyaSubmitted}>
                     <h1>Sign In</h1>
-                    <div className="ui divider"></div>
-                    <div className="ui form">
-                        {/* Name Field */}
+                    <div className="divider"></div>
+                    <div className="form">
                         <div className="field">
                             <label>Full Name</label>
                             <input
@@ -88,7 +87,6 @@ function SignIn() {
                         </div>
                         <p>{formErrors.name}</p>
 
-                        {/* Birthday Field */}
                         <div className="field">
                             <label>Birthday</label>
                             <input
@@ -100,7 +98,6 @@ function SignIn() {
                         </div>
                         <p>{formErrors.birthday}</p>
 
-                        {/* Username Field */}
                         <div className="field">
                             <label>Username</label>
                             <input
@@ -113,7 +110,6 @@ function SignIn() {
                         </div>
                         <p>{formErrors.username}</p>
 
-                        {/* Password Field */}
                         <div className="field">
                             <label>Password</label>
                             <input
@@ -126,7 +122,6 @@ function SignIn() {
                         </div>
                         <p>{formErrors.password}</p>
 
-                        {/* Confirm Password Field */}
                         <div className="field">
                             <label>Confirm Password</label>
                             <input
@@ -138,8 +133,6 @@ function SignIn() {
                             />
                         </div>
                         <p>{formErrors.confirmPassword}</p>
-
-                        {/* Submit Button */}
                         <button className="button">Sign In</button>
                     </div>
                 </form>

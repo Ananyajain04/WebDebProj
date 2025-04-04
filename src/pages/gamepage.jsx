@@ -105,7 +105,7 @@ function Gamepage() {
   useEffect(() => {
     console.log(letterStatus); // This will log the updated randomWord
     if(correctcount==5){
-      document.getElementById("changeifwon").textContent="Congrats! You won!";
+      document.getElementById("changeifwon").textContent="Congrats!";
       }
       console.log(correctcount,"we got it done");
   }, [letterStatus,correctcount])
