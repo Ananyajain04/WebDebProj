@@ -10,19 +10,17 @@
 
 .flex-container {
     display: flex;
-    height: 80%;
+    height:86vh;
     align-items: center; /* Center items vertically */
     justify-content: space-between; /* Space between image and text */
     justify-content: center;
     align-items: center;
-    margin-bottom: 40px; /* Space below the flex container */
 }
 .flex-container>img{
     border-radius: 50%;
-}
-
-.taylor-image {
-    width: 50%; /* Set image width */
+    width: 40vw;
+    height:40vw;
+    margin-left:25px;
 }
 
 .taylor-info {

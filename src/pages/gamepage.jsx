@@ -49,15 +49,16 @@ function Gamepage() {
     setRandomWord(selectedWord.toUpperCase()); // Store in lowercase
   }, []);
   useEffect(() => {
-    console.log(randomWord); // This will log the updated randomWord
+    //console.log(randomWord); // This will log the updated randomWord
   }, [randomWord]);
 
   const handleLetterChange = (rowIndex, colIndex) => (newValue) => {
     const newInputs = [...inputs];
     newInputs[rowIndex][colIndex] = newValue.value;
     setInputs(newInputs);
-    console.log(inputs);
+    //console.log(inputs);
   };
+  
   const checkWord = () => {
     const currentRow = inputs[activeRow];
     const newLetterStatus = Array(5).fill(null);
@@ -87,7 +88,7 @@ function Gamepage() {
         newLetterStatus[i] = "wrong-position"; // Mark as wrong position
         wordArray[wordArray.indexOf(currentRow[i])] = null; // Remove matched letter from the word array
       } else if (newLetterStatus[i] !== "correct") {
-        console.log(wordArray[i],inputs[activeRow][i]);
+        //console.log(wordArray[i],inputs[activeRow][i]);
         newLetterStatus[i] = "incorrect"; // Mark as incorrect
       }
     }
@@ -107,7 +108,7 @@ function Gamepage() {
     if(correctcount==5){
       document.getElementById("changeifwon").textContent="Congrats!";
       }
-      console.log(correctcount,"we got it done");
+      //console.log(correctcount,"we got it done");
   }, [letterStatus,correctcount])
   return(
     <div>

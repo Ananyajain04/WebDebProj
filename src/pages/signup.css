@@ -44,13 +44,11 @@ pre {
 }
 
 p {
-    color: #1F2E43;
+    color:     red;
     font-size: 0.8rem;
 }
 
 .text {
-    margin: 2px;
-    padding: 5px;
     color:#1F2E43;
 }
 

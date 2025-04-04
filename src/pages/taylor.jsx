@@ -8,7 +8,7 @@ function Taylor() {
     <div id="about-taylor">
       <Navbar />
       <div className="flex-container">
-        <img src="https://www.billboard.com/wp-content/uploads/2023/11/DO-NOT-USE-BBMA-2023-Taylor-Swift-2023-billboard-music-awards-acceptance-billboard-1548.jpg?w=1024" alt="" style={{width:"600px",marginLeft:"20px",height:'600px'}}/>
+        <img src="https://www.billboard.com/wp-content/uploads/2023/11/DO-NOT-USE-BBMA-2023-Taylor-Swift-2023-billboard-music-awards-acceptance-billboard-1548.jpg?w=1024" alt=""/>
         
         <div className="taylor-info">
           <div>

@@ -72,7 +72,7 @@ function SignIn() {
                 )}
 
                 <form onSubmit={AnanyaSubmitted}>
-                    <h1>Sign In</h1>
+                    <h1 style={{margin:"10px"}}>Sign In</h1>
                     <div className="divider"></div>
                     <div className="form">
                         <div className="field">
@@ -85,7 +85,7 @@ function SignIn() {
                                 onChange={handleChange}
                             />
                         </div>
-                        <p>{formErrors.name}</p>
+                        <p style={{margin:"0px"}}>{formErrors.name}</p>
 
                         <div className="field">
                             <label>Birthday</label>
@@ -96,7 +96,7 @@ function SignIn() {
                                 onChange={handleChange}
                             />
                         </div>
-                        <p>{formErrors.birthday}</p>
+                        <p style={{margin:"0px"}}>{formErrors.birthday}</p>
 
                         <div className="field">
                             <label>Username</label>
@@ -108,7 +108,7 @@ function SignIn() {
                                 onChange={handleChange}
                             />
                         </div>
-                        <p>{formErrors.username}</p>
+                        <p style={{margin:"0px"}}>{formErrors.username}</p>
 
                         <div className="field">
                             <label>Password</label>
@@ -119,8 +119,9 @@ function SignIn() {
                                 value={formValues.password}
                                 onChange={handleChange}
                             />
+                             <p style={{margin:"0px"}}>{formErrors.password}</p>
                         </div>
-                        <p>{formErrors.password}</p>
+                       
 
                         <div className="field">
                             <label>Confirm Password</label>
@@ -132,8 +133,8 @@ function SignIn() {
                                 onChange={handleChange}
                             />
                         </div>
-                        <p>{formErrors.confirmPassword}</p>
-                        <button className="button">Sign In</button>
+                        <p style={{margin:"0px"}}>{formErrors.confirmPassword}</p>
+                        <button className="button" style={{margin:"10px"}}>Sign In</button>
                     </div>
                 </form>
             </div>
