@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./AlbumCard.css";
+import "./albumcard.css";
 const AlbumCard = ({ album }) => {
   const [flipped, setFlipped] = useState(false);
 
