@@ -1,0 +1,62 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+  font-family: Sequoia, sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+.landing-container {
+  position: relative;
+  width: 100vw;
+  height: 92vh;
+  background-image: url("../src/assets/bg.svg"); /* Update with actual path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center; /* Centers vertically */
+  justify-content: flex-start; /* Aligns content to the left */
+  padding-left: 10vw; /* Moves text towards the left */
+  color: #E0EDFD;
+  overflow: hidden;
+  overflow-x:hidden ;
+}
+
+/* Text & button container */
+.content{
+  max-width: 500px;
+  text-align: left; /* Ensures text stays aligned left */
+  color:#E0EDFD;
+}
+
+
+#landing-button {
+  background-color: #E0EDFD;
+  color:#1F2E43;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#landing-button:hover {
+  background-color: #c9d9f2;
+}
+#mainphoto{
+  position: absolute;
+  top: 50%;
+  right: -12vw; /* Adjust as needed */
+  transform: translateY(-50%);
+  width: 100vw; /* Adjust size as needed */
+  height:99vh;
+}
+.lightblue{
+  color:#c9d9f2;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  opacity: 0.9;
+}
