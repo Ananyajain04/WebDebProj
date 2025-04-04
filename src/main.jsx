@@ -19,7 +19,6 @@ createRoot(document.getElementById('root')).render(
       <Route path="/signin" element={<SignIn />} />
       <Route path="/home" element={<Taylor />} />
       </Routes>
-      
     </BrowserRouter>
   </StrictMode>,
 )

@@ -5,7 +5,7 @@ const Navbar = () => {
     const navigate = useNavigate();
     return (
         <nav className="navbar">
-            <h2>The Swift Society</h2>
+            <h2>Swiftie Society</h2>
             <button className="logout-btn" onClick={() => navigate("/login")}>Login</button>
         </nav>
     );

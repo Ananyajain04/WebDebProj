@@ -9,7 +9,7 @@ const Navbar = () => {
     }
     return (
         <nav className="navbar">
-            <h2>The Swift Society</h2>
+            <h2>Swiftie Society</h2>
             <div className="nav-links">
                 <span className="nav-item" onClick={() => navigate("/home")}>Home</span>
                 <span className="nav-item" onClick={() => navigate("/albums")}>Albums</span>
